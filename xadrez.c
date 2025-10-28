@@ -28,5 +28,76 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+    //Declaração de variáveis
+
+    int menu;
+    char peca;
+
+
+    //Apresentação do Menu do Jogo
+    printf("MateCheck Studios Present\n\n");
+    printf("    XADREZ: The Game     \n\n");
+    printf("\n\n");
+
+    printf("1 - Novo Jogo\n");
+    printf("2 - Tutorial");
+    printf("3 - Sair do jogo");
+    scanf("%d", menu)
+
+    //Escolha entre opções do Menu
+    //1 - Novo Jogo
+    //2 - Tutorial
+    //3 - Sair do Jogo
+    switch (menu)
+    {
+    case 1:
+        //Escolha da peça
+        printf("Iniciando Novo Jogo\n\n\n");
+        printf(" Escolha qual peça mover: \n");
+        printf("T - Torre\n");
+        printf("B - Bispo\n");
+        printf("D - Dama / Rainha");
+        scanf("%c", &peca);
+
+        switch (peca)
+        {
+            //Move-se em linha reta horizontalmente ou verticalmente.
+            //Caso escolha Torre - programa deverá simular o movimento da Torre cinco casas para a direita.
+            case 'T':
+                for (int i = 0; i < 5; i++)
+                {
+                    printf("Direita\n"); // Indica a direção do movimento
+                }
+            break;
+            
+            case 'B':
+                //Move-se na diagonal.
+                //Caso escolha Bispo - Seu programa deverá simular o movimento do Bispo cinco casas na diagonal para cima e à direita.
+                //Para representar a diagonal, você imprimirá a combinação de duas direções a cada casa (ex: "Cima, Direita").
+                while ('')
+                {
+                    /* code */
+                }
+                
+            break;
+
+            case 'D':
+            break;
+        
+        default:
+            printf ("Peça incorreta\n\n")
+            break;
+        }
+
+
+
+
+        break;
+    
+    default:
+        break;
+    }
+
+
     return 0;
 }
