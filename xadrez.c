@@ -60,7 +60,8 @@ int main() {
             printf(" Escolha qual peça mover: \n");
             printf("T - Torre\n");
             printf("B - Bispo\n");
-            printf("D - Dama / Rainha\n\n");
+            printf("D - Dama (Rainha)\n");
+            printf("C - Cavalo\n");
             printf(" Escolha: ");
             scanf(" %c", &peca);
 
@@ -99,7 +100,22 @@ int main() {
                         i++;
                     } while (i <= 8);                
                     break;
-            
+                
+                case 'C':
+                case 'c':
+                    int c_movimento = 1;
+
+                    while (c_movimento == 1)
+                    {
+                        for (int i = 0; i < 2; i++)
+                        {
+                            printf("Baixo\n");
+                        }
+                        printf("Esquerda\n");                        
+                        c_movimento--;
+                    }
+                    break;
+                                
                 default:
                     printf ("Peça incorreta\n\n");
                     printf(" Fim de Jogo!\n");
